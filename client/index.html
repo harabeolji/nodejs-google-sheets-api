@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NodeJS Google Sheets API Form</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body class="bg-blue-50 bg-opacity-50 font-sans">
+	<div class="grid">
+		<header class="place-self-center my-5 pt-5">
+			<h1 class="font-thin text-4xl">A Simple Google Sheets Form</h1>
+		</header>
+
+		<div class="place-self-center my-5 w-96">
+			<form id="form">
+				<div class="mt-4">
+					<label for="name" class="my-1 block text-sm font-medium text-gray-800">Name</label>
+					<input id="formName" name="name" type="text" class="my-1 p-2 focus:border-gray-300 block w-full h-10 shadow-sm rounded-md">
+				</div>
+				<div class="mt-4">
+					<label for="email" class="my-1 block text-sm font-medium text-gray-800">Email</label>
+					<input id="formEmail" name="email" type="email" class="my-1 p-2 focus:border-gray-300 block w-full h-10 shadow-sm rounded-md">
+				</div>
+				<div class="mt-4">
+					<label for="mobile" class="my-1 block text-sm font-medium text-gray-800">Mobile</label>
+					<input id="formMobile" name="mobile" type="tel" pattern="[8-9]{1}[0-9]{7}" class="my-1 p-2 focus:border-gray-300 block w-full h-10 shadow-sm rounded-md">
+				</div>
+				<div class="mt-4">
+					<label for="address" class="my-1 block text-sm font-medium text-gray-800">Address</label>
+					<input id="formAddress" name="address" type="text" class="my-1 p-2 focus:border-gray-300 block w-full h-10 shadow-sm rounded-md">
+				</div>
+				<div class="mt-4">
+					<label for="postal" class="my-1 block text-sm font-medium text-gray-800">Postal Code</label>
+					<input id="formPostal" name="postal" type="number" class="my-1 p-2 focus:border-gray-300 block w-full h-10 shadow-sm rounded-md">
+				</div>
+				<div class="mt-4">
+					<input id="formSubmit" type="submit" value="Submit" class="my-1 rounded-md w-full h-10 hover:bg-gray-700 bg-gray-500 text-white focus:outline-none shadow-md">
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<script src="/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
