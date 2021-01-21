@@ -1,5 +1,5 @@
 const { google } = require('googleapis')
-const keys = require('../gsapikeys.json')
+const keys = require('../gsapikeys.json') // add your own credentials
 
 const client = new google.auth.JWT(
 	keys.client_email,
